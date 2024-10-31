@@ -1,16 +1,33 @@
-<a href="/">Home</a>
-<a href="/about/">about</a>
-<a href="/blog/">blog</a>
+---
+const pageTitle = "My Astro Learning Blog";
+---
 
-<br>
-<img src="https://i.namu.wiki/i/8jx6yGRqnhcQrdk0A9BzJIOKGsRMrIxTRy0KyAdbCxybn6o1T3QfDJWa2z0tPUf1051QsgiFBRtKdFDOAkb6eg.webp" alt="">
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>{pageTitle}</title>
+        <style>
+            img {
+                position: relative;
+                width: 300px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="/">Home</a>
+        <a href="/about/">about</a>
+        <a href="/blog/">blog</a>
 
-<h1>My Astro Learning Blog</h1>
-<p>This is where I will post about my journey learning Astro.</p>
+        <br>
+        <img src="https://i.namu.wiki/i/8jx6yGRqnhcQrdk0A9BzJIOKGsRMrIxTRy0KyAdbCxybn6o1T3QfDJWa2z0tPUf1051QsgiFBRtKdFDOAkb6eg.webp" alt="">
 
-<style>
-    img {
-        position: relative;
-        width: 300px;
-    }
-</style>
+        <h1>{pageTitle}</h1>
+        <p>This is where I will post about my journey learning Astro.</p>
+        <ul>
+            <li><a href="/posts/post-1/">Post 1</a></li>
+            <li><a href="/posts/post-2/">Post 2</a></li>
+            <li><a href="/posts/post-3/">Post 3</a></li>
+        </ul>
+    </body>
+</html>
