@@ -82,3 +82,8 @@ h1 {
   }
 
 }
+
+img {
+  position: relative;
+  width: 300px;
+}
